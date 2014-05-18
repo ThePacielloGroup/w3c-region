@@ -11,7 +11,9 @@ body {font-family:Verdana, Geneva, sans-serif}
 </head>
 <body>
 <h1>w3c-region example</h1>
-<p>An alternative semantic custom element for headingless <code>article/section</code> elements used to wrap child <code>section</code> and/or <code>article</code> elements.</p>
+<p>An alternative semantic custom element for headingless <code>article/section</code> elements used identify a region of content.</p>
+<h2>Semantics: <code>div</code> too little, <code>article/section</code> too much, <code>w3c-region</code> just right. </h2>
+<p>In cases where an author wants to identify a region of page content in the code (which may include multiple section or article elements), but does not want to add a heading what element should they use? Wrapping them in a <code>div</code> is viewed with disdain because <code>div</code>'s are not <em>semantic</em> enough. Wrapping them in an <code>article</code> or <code>section</code> adds unwanted/un-needed outline semantics. Thats where  <code>w3c-region</code> comes in. It provides a semantic wrapper without effecting the outline.</p>
 <div is="w3c-region">
 <section>
 <h2>Old Skool</h2>
@@ -34,7 +36,9 @@ body {font-family:Verdana, Geneva, sans-serif}
 </w3c-r>
 <h2>Usage </h2>
 <h3>is=&quot;w3c-region&quot;</h3>
-<p><code><mark>&lt;div is=&quot;w3c-region&quot;&gt;</mark><br>
+<p><code>
+  <mark>&lt;div is=&quot;w3c-region&quot;&gt;</mark>
+  <br>
   &lt;section&gt;<br>
   &lt;h2&gt;Old Skool&lt;/h2&gt;<br>
   &lt;p&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;region&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;<br>
@@ -58,7 +62,15 @@ body {font-family:Verdana, Geneva, sans-serif}
 &lt;/section&gt;<br><mark>&lt;/w3c-r&gt;</mark></code>
 
 </p>
-<p>&nbsp;</p>
+<h4>what comes out?</h4>
+<p><code>
+&lt;div is=&quot;w3c-region&quot; <mark>role=&quot;region&quot;</mark>&gt;...
+</code></p>
+<p><code>
+  &lt;w3c-r 
+  <mark>role=&quot;region&quot;</mark>&gt;...
+
+</code></p>
 
 
 
