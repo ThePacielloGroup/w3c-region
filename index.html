@@ -20,6 +20,22 @@ h2 {
 }
 
 #logo {float:left;margin-right:1em; background-color:white;}
+.example {
+    background: none repeat scroll 0 0 #FCFCFC;
+    border-color: #C0C0C0;
+    border-left: 0.25em solid #C0C0C0;
+    color: #222222;
+    display: block;
+    margin-left: 1em;
+	padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+	width:30em;
+}
+p.example:before {
+    content: "Code Example: ";
+    font-weight: bolder;
+}
 </style>
 </head>
 <body>
@@ -32,37 +48,37 @@ h2 {
 <div is="w3c-region">
 <section>
 <h2>Plain Old Skool</h2>
-<p><code>&lt;div&gt;</code></p>
+<p class="example"><code>&lt;div&gt;</code></p>
 <blockquote>
   <p>The <a href="http://www.w3.org/html/wg/drafts/html/master/grouping-content.html#the-div-element">div</a> element has no special meaning at all.</p>
   <a href="http://www.w3.org/html/wg/drafts/html/master/grouping-content.html#the-div-element">HTML 5.1</a></blockquote>
 <h2>Old Skool semanticized</h2>
-<p><code>&lt;div class=&quot;region&quot;&gt;</code></p>
+<p class="example"><code>&lt;div class=&quot;region&quot;&gt;</code></p>
 <blockquote>
   <p>... It can be used with the <a href="http://www.w3.org/html/wg/drafts/html/master/dom.html#classes">class</a>, <a href="http://www.w3.org/html/wg/drafts/html/master/dom.html#attr-lang">lang</a>, and <a href="http://www.w3.org/html/wg/drafts/html/master/dom.html#attr-title">title</a> attributes to mark up semantics    common to a group of consecutive elements.</p>
   <a href="http://www.w3.org/html/wg/drafts/html/master/grouping-content.html#the-div-element">HTML 5.1</a></blockquote>
 </section>
 <section>
 <h2>Middle Skool semanticized</h2>
-<p><code>&lt;div role=&quot;region&quot;&gt;</code></p>
+<p class="example"><code>&lt;div role=&quot;region&quot;&gt;</code></p>
 <p>From representing nothing to anybody except those who can read the <code>attribute</code> scratchings, to representing a <a href="http://www.w3.org/TR/di-gloss/#def-perceivable-unit">peceivable unit</a> via the magic of <a href="http://rawgit.com/w3c/aria-in-html/master/index.html">ARIA</a>.</p>
 </section>
 </div>
 <w3c-r>
 <section>
 <h2>OldNew Skool semanticized</h2>
-<p><code>&lt;div is=&quot;w3c-region&quot;&gt;</code></p>
+<p class="example"><code>&lt;div is=&quot;w3c-region&quot;&gt;</code></p>
 <p>Old skool CSS <code>style</code> with semantic underpants.</p>
 </section>
 <section>
 <h2>Brand New Skool semanticized</h2>
-<p><code>&lt;w3c-r&gt;</code></p>
+<p class="example"><code>&lt;w3c-r&gt;</code></p>
 <p>Slick webcomponent leisure suit with discrete semantic under garment.</p>
 </section>
 </w3c-r>
 <h2>Usage </h2>
 <h3>is=&quot;w3c-region&quot;</h3>
-<p><code>
+<p class="example"><code>
   <mark>&lt;div is=&quot;w3c-region&quot;&gt;</mark>
   <br>
   &lt;section&gt;<br>
@@ -75,7 +91,7 @@ h2 {
   &lt;/section&gt;<br>
  <mark>&lt;/div&gt;</mark></code></p>
 <h3>&lt;w3c-r&gt;</h3>
-<p><code>
+<p class="example"><code>
   <mark>
   &lt;w3c-r&gt;</mark><br>
   &lt;section&gt;<br>
@@ -89,13 +105,10 @@ h2 {
 
 </p>
 <h2>Where's the semantics?</h2>
-<p><code>
-&lt;div is=&quot;w3c-region&quot; <mark>role=&quot;region&quot;</mark>&gt;...
-</code></p>
-<p><code>
+<p class="example"><code>
+&lt;div is=&quot;w3c-region&quot; <mark>role=&quot;region&quot;</mark>&gt;...<br><br>
   &lt;w3c-r 
   <mark>role=&quot;region&quot;</mark>&gt;...
-
 </code></p>
 
 
