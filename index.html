@@ -18,14 +18,17 @@ h2 {
     border-top: 3px solid #663300;
     padding: 0.2em;
 }
+
+#logo {float:left;margin-right:1em; background-color:white;}
 </style>
 </head>
 <body>
+<div id="logo"><img src="http://blog.paciellogroup.com/wp-content/uploads/2014/05/webcomponents-a11y.png" width="186" height="270" alt="Web components and accessibility."></div>
 <h1>w3c-region example</h1>
 <p>An <font face="Comic Sans MS, cursive" color="#330066">eXperiMental</font> <a href="http://www.polymer-project.org/platform/custom-elements.html">custom element</a> to use in place of headingless (no <code>h1-h6</code>) <code><a href="http://www.w3.org/html/wg/drafts/html/master/sections.html#the-article-element">article</a>/<a href="http://www.w3.org/html/wg/drafts/html/master/sections.html#the-section-element">section</a></code> elements.</p>
 <p><a href="https://github.com/ThePacielloGroup/w3c-region">w3c-region is available</a> to skewer on github.</p>
 <h2>Semantics: <code>div</code> too little, <code>article/section</code> too much, <code>w3c-region</code> just right. </h2>
-<p>In cases where an author wants to identify a region of page content in the code (which may include multiple section or article elements), but does not want to add a heading what element should they use? Wrapping them in a <code>div</code> is viewed with disdain because <code>div</code>'s are not <em>semantic</em> enough. Wrapping them in an <code>article</code> or <code>section</code> adds unwanted/un-needed outline semantics. Thats where  <code>w3c-region</code> comes in. It provides a semantic wrapper without effecting the outline.</p>
+<p>In cases where an author wants to identify a region of page content in the code (which may include multiple section or article elements), but does not want to add a heading, what element should they use? Wrapping them in a <code>div</code> is viewed with disdain because <code>div</code>'s are not <em>semantic</em> enough. Wrapping them in an <code>article</code> or <code>section</code> adds unwanted/un-needed outline semantics. Thats where  <code>w3c-region</code> comes in. It provides a semantic wrapper without effecting the outline.</p>
 <div is="w3c-region">
 <section>
 <h2>Plain Old Skool</h2>
